@@ -5,7 +5,7 @@ from .models import Room,Player
 class PlayerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Player
-        fields = ['id', 'name', 'skill', 'join_time', 'number_of_matches', 'number_of_shuttlecock']
+        fields = ['id','room', 'name', 'skill', 'join_time', 'number_of_matches', 'number_of_shuttlecock']
 
 
 class RoomSerializer(serializers.ModelSerializer):
